@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HiTaxi</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Hi Taxi</h1>
+        <nav>
+            <ul>
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About Us</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#flight-info" class="nav-link">Flight Information</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="container">
+        <h2>Welcome to Your Taxi Service</h2>
+        <p>Reliable and comfortable transportation across the UK.</p>
+        <div class="home-buttons">
+            <a href="#booking" class="btn">Book a Ride</a>
+            <a href="#request" class="btn">Request a Service</a>
+        </div>
+        <div class="map-container">
+            <h3>Our Service Area</h3>
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=..."
+                width="100%" 
+                height="400" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy">
+            </iframe>
+        </div>
+    </section>
+
+    <section id="about" class="container hidden">
+        <h2>About Us</h2>
+        <p>We are a trusted taxi service provider offering safe and reliable transportation across the UK.</p>
+    </section>
+
+    <section id="services" class="container hidden">
+        <h2>Our Services</h2>
+        <p>24/7 Taxi Service, Airport Transfers, Corporate Transportation, Special Events, and more.</p>
+    </section>
+
+    <section id="flight-info" class="container hidden">
+        <h2>Flight Information</h2>
+        <p>Check the latest flight status below:</p>
+        <form id="flight-form">
+            <label for="flightNumber">Flight Number:</label>
+            <input type="text" id="flightNumber" name="flightNumber" placeholder="e.g. BA123">
+            <input type="submit" value="Check Status">
+        </form>
+        <div id="flight-status">
+            <!-- Flight status results will be displayed here -->
+        </div>
+    </section>
+
+    <section id="booking" class="container hidden">
+        <h2>Book a Ride</h2>
+        <form id="booking-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+            <label for="phone">Phone:</label>
+            <input type="text" id="phone" name="phone">
+            <label for="pickup">Pickup Location:</label>
+            <input type="text" id="pickup" name="pickup">
+            <label for="dropoff">Dropoff Location:</label>
+            <input type="text" id="dropoff" name="dropoff">
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date">
+            <button type="button" id="share-location">Share My Location</button>
+            <input type="submit" value="Book Now">
+        </form>
+        <div id="location-status"></div>
+    </section>
+
+    <section id="request" class="container hidden">
+        <h2>Request a Service</h2>
+        <form id="request-form">
+            <label for="requestName">Name:</label>
+            <input type="text" id="requestName" name="requestName">
+            <label for="requestPhone">Phone:</label>
+            <input type="text" id="requestPhone" name="requestPhone">
+            <label for="requestDetails">Details:</label>
+            <textarea id="requestDetails" name="requestDetails"></textarea>
+            <input type="submit" value="Request Now">
+        </form>
+    </section>
+
+    <section id="contact" class="container hidden">
+        <h2>Contact Us</h2>
+        <p>Phone: +123-456-7890</p>
+        <p>Email: info@yourtaxiservice.com</p>
+        <form>
+            <label for="contactName">Name:</label>
+            <input type="text" id="contactName" name="contactName">
+            <label for="contactEmail">Email:</label>
+            <input type="email" id="contactEmail" name="contactEmail">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message"></textarea>
+            <input type="submit" value="Send">
+        </form>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>About Us</h3>
+                <p>We provide safe and reliable taxi services across the UK. Our experienced drivers and well-maintained vehicles ensure a comfortable ride.</p>
+            </div>
+            <div class="footer-column">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li>Phone: +123-456-7890</li>
+                    <li>Email: info@yourtaxiservice.com</li>
+                    <li>Address: 123 Taxi St., Your City, UK</li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Facebook_Logo_%282019%29.png" alt="Facebook"></a>
+                    <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/7/71/X_Twitter_2.png" alt="Twitter"></a>
+                    <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram"></a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h3>Our Services</h3>
+                <ul>
+                    <li>24/7 Taxi Service</li>
+                    <li>Airport Transfers</li>
+                    <li>Corporate Transportation</li>
+                    <li>Special Events</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Hi Taxi. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,280 @@
+/* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header Styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0 0;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 8px 12px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #ffcc00;
+    color: #333;
+    border-radius: 5px;
+}
+
+/* Container Styles */
+.container {
+    max-width: 800px;
+    margin: 100px auto 20px; /* Adjusted for fixed header */
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Home Section Styles */
+#home {
+    text-align: center;
+    background: url('https://upload.wikimedia.org/wikipedia/commons/0/03/TAXI.jpg') no-repeat center center/cover; /* Add your background image */
+    color: #fff;
+    padding: 150px 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+#home h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+#home p {
+    font-size: 20px;
+}
+
+.home-buttons {
+    margin-top: 20px;
+}
+
+.home-buttons .btn {
+    display: inline-block;
+    background-color: #ffcc00;
+    color: #333;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 0 10px;
+    font-size: 18px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.home-buttons .btn:hover {
+    background-color: #e6b800;
+    color: #fff;
+}
+
+/* Map Container Styles */
+.map-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.map-container h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.map-container iframe {
+  border: 0;
+  border-radius: 10px;
+}
+
+/* Hidden Sections Styles */
+.hidden {
+    display: none;
+}
+
+/* Flight Information Section */
+#flight-info {
+    text-align: center;
+}
+
+#flight-form {
+    margin-top: 20px;
+}
+
+/* Flight Information Section (continued) */
+#flight-form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+#flight-form input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 300px;
+}
+
+#flight-form input[type="submit"] {
+    background-color: #ffcc00;
+    border: none;
+    padding: 10px 20px;
+    color: #333;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#flight-form input[type="submit"]:hover {
+    background-color: #e6b800;
+    color: #fff;
+}
+
+#flight-status {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 250px;
+    margin: 20px;
+}
+
+.footer-column h3 {
+    margin-top: 0;
+    font-size: 20px;
+    color: #ffcc00;
+    margin-bottom: 10px;
+}
+
+.footer-column p, .footer-column ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    line-height: 1.8;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-column ul li a:hover {
+    color: #ffcc00;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin: 0 10px;
+    transition: transform 0.3s;
+}
+
+.social-icons a img {
+    width: 32px;
+    height: 32px;
+}
+
+.social-icons a:hover {
+    transform: scale(1.1);
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #444;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+/* Form Styles */
+form {
+    margin: 0;
+    padding: 0;
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+form input[type="text"], form input[type="date"], form input[type="email"], form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+form input[type="submit"] {
+    background-color: #ffcc00;
+    border: none;
+    padding: 10px 20px;
+    color: #333;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+form input[type="submit"]:hover {
+    background-color: #e6b800;
+    color: #fff;
+}
